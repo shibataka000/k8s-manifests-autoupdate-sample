@@ -1,1 +1,1 @@
-FROM nginx:1.21.4
+FROM python:3.10.1
