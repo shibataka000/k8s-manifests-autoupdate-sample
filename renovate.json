@@ -2,18 +2,10 @@
     "repositories": [
         "shibataka000/renovate-sample"
     ],
-    "baseBranches": [
-        "develop"
-    ],
     "extends": [
         "config:base"
     ],
     "enabledManagers": [
         "dockerfile"
-    ],
-    "docker": {
-        "matchBaseBranches": [
-            "develop"
-        ]
-    }
+    ]
 }
