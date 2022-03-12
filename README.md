@@ -1,1 +1,1 @@
-# k8s-manifests-autoupdate-sample
+# renovate-sample
