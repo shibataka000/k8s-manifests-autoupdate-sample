@@ -1,0 +1,12 @@
+name: Renovate
+on: push
+jobs:
+  renovate:
+    name: Renovate
+    runs-on: ubuntu-latest
+    env:
+    steps:
+      - uses: actions/checkout@v2
+      - run: docker run --rm renovate/renovate
+        env:
+          GITHUB_COM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
