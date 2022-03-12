@@ -1,3 +1,5 @@
 {
-    "repositories": "shibataka000/renovate-sample"
+    "repositories": [
+        "shibataka000/renovate-sample"
+    ]
 }
