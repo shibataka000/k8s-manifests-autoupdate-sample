@@ -7,5 +7,10 @@
     ],
     "enabledManagers": [
         "dockerfile"
-    ]
+    ],
+    "dockerfile": {
+        "fileMatch": [
+            "^.*Dockerfile.*$"
+        ]
+    }
 }
