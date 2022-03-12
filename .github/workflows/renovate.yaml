@@ -11,3 +11,5 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           configurationFile: renovate.json
+        env:
+          RENOVATE_DRY_RUN: true
