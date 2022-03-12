@@ -1,5 +1,8 @@
 {
     "repositories": [
         "shibataka000/renovate-sample"
-    ]
+    ],
+    "docker": {
+        "enabled": true
+    }
 }
