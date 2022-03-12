@@ -6,6 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: docker run --rm renovate/renovate
-        env:
-          RENOVATE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Run renovate
+        run: docker run --rm -e "RENOVATE_TOKEN=${{ secrets.GITHUB_TOKEN }}" renovate/renovate
