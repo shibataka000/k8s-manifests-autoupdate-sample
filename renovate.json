@@ -2,6 +2,9 @@
     "repositories": [
         "shibataka000/renovate-sample"
     ],
+    "enabledManagers": [
+        "dockerfile"
+    ],
     "dockerfile": {
         "fileMatch": [
             "examples/docker/Dockerfile"
