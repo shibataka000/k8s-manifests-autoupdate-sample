@@ -5,7 +5,7 @@
     "enabledManagers": [
         "dockerfile"
     ],
-    "docker": {
+    "dockerfile": {
         "fileMatch": [
             "examples/docker/Dockerfile"
         ]
