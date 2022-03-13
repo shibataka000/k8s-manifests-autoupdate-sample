@@ -8,6 +8,7 @@
         ":prConcurrentLimitNone"
     ],
     "enabledManagers": [
-        "dockerfile"
+        "dockerfile",
+        "kustomize"
     ]
 }
