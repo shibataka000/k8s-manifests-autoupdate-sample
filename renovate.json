@@ -14,10 +14,10 @@
     "regexManagers": [
         {
             "fileMatch": [
-                "^.*kustomization.yaml$"
+                "(^|/)kustomization\\.ya?ml$"
             ],
             "matchStrings": [
-                "https:\\/\\/raw\\.githubusercontent\\.com\\/(?<depName>[^/]+\\/[^/]+)\\/(?<currentValue>[^/]+)\\/.*\\s+#\\s*renovate:enabled"
+                "https://raw\\.githubusercontent\\.com/(?<depName>[^/]+/[^/]+)/(?<currentValue>[^/]+)/.*\\s+#\\s*renovate:enabled"
             ],
             "datasourceTemplate": "github-releases",
             "versioningTemplate": "semver"
