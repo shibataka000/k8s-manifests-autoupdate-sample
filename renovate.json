@@ -3,6 +3,11 @@
         "shibataka000/renovate-sample"
     ],
     "enabledManagers": [
-        "npm"
-    ]
+        "dockerfile"
+    ],
+    "dockerfile": {
+        "fileMatch": [
+            "^.*examples/docker/Dockerfile.*$"
+        ]
+    }
 }
