@@ -10,5 +10,17 @@
     "enabledManagers": [
         "dockerfile",
         "kustomize"
+    ],
+    "regexManagers": [
+        {
+            "fileMatch": [
+                "^.*kustomization.yaml$"
+            ],
+            "matchStrings": [
+                "https:\\/\\/raw\\.githubusercontent\\.com\\/(?<depName>[^/]+\\/[^/]+)\\/(?<currentValue>[^/]+)\\/.*\\s+#\\s*renovate:enabled"
+            ],
+            "datasourceTemplate": "github-releases",
+            "versioningTemplate": "semver"
+        }
     ]
 }
