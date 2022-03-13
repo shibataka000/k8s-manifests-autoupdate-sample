@@ -2,7 +2,7 @@
     "repositories": [
         "shibataka000/renovate-sample"
     ],
-    "dockerfile": {
+    "docker": {
         "fileMatch": [
             "examples/docker/Dockerfile"
         ]
