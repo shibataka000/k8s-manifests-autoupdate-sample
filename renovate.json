@@ -5,9 +5,6 @@
     "extends": [
         "config:base"
     ],
-    "enabledManagers": [
-        "dockerfile"
-    ],
     "dockerfile": {
         "fileMatch": [
             "examples/docker/Dockerfile"
