@@ -3,7 +3,8 @@
         "shibataka000/renovate-sample"
     ],
     "extends": [
-        "config:base"
+        "config:base",
+        ":prConcurrentLimitNone"
     ],
     "enabledManagers": [
         "dockerfile"
