@@ -2,15 +2,7 @@
     "repositories": [
         "shibataka000/renovate-sample"
     ],
-    "extends": [
-        "config:base"
-    ],
     "enabledManagers": [
-        "dockerfile"
-    ],
-    "dockerfile": {
-        "fileMatch": [
-            "^.*Dockerfile.*$"
-        ]
-    }
+        "npm"
+    ]
 }
