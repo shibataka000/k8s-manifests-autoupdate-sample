@@ -2,6 +2,9 @@
     "repositories": [
         "shibataka000/renovate-sample"
     ],
+    "extends": [
+        "config:base"
+    ],
     "enabledManagers": [
         "dockerfile"
     ]
