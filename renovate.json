@@ -11,7 +11,7 @@
     ],
     "dockerfile": {
         "fileMatch": [
-            "examples/docker/Dockerfile"
+            "examples/dockerfile/Dockerfile"
         ]
     }
 }
