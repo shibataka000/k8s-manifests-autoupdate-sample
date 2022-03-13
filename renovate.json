@@ -4,14 +4,10 @@
     ],
     "extends": [
         "config:base",
-        ":prHourlyLimitNone"
+        ":prHourlyLimitNone",
+        ":prConcurrentLimitNone"
     ],
     "enabledManagers": [
         "dockerfile"
-    ],
-    "dockerfile": {
-        "fileMatch": [
-            "examples/docker/Dockerfile"
-        ]
-    }
+    ]
 }
