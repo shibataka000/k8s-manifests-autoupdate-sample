@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - https://raw.githubusercontent.com/argoproj/argo-cd/v2.0.5/manifests/install.yaml # renovate:enabled
-- https://raw.githubusercontent.com/kubernetes/autoscaler/cluster-autoscaler-1.21.0/cluster-autoscaler/cloudprovider/aws/examples/cluster-autoscaler-autodiscover.yaml # renovate:enabled
+- https://raw.githubusercontent.com/kubernetes/autoscaler/cluster-autoscaler-1.23.0/cluster-autoscaler/cloudprovider/aws/examples/cluster-autoscaler-autodiscover.yaml # renovate:enabled
 images:
 - name: k8s.gcr.io/autoscaling/cluster-autoscaler
   newName: k8s.gcr.io/autoscaling/cluster-autoscaler
