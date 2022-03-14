@@ -11,6 +11,7 @@
         "dockerfile",
         "kustomize",
         "argocd",
+        "helmfile",
         "regex"
     ],
     "packageRules": [
