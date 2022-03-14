@@ -28,7 +28,7 @@
                 "(^|/)kustomization\\.ya?ml$"
             ],
             "matchStrings": [
-                "https://raw\\.githubusercontent\\.com/kubernetes/autoscaler/cluster-autoscaler-(?<currentValue>[^/]+)/.*\\s+#\\s*renovate:cluster-autoscaler:enabled"
+                "https://raw\\.githubusercontent\\.com/kubernetes/autoscaler/(?<currentValue>[^/]+)/.*\\s+#\\s*renovate:cluster-autoscaler:enabled"
             ],
             "depNameTemplate": "kubernetes/autoscaler",
             "datasourceTemplate": "github-releases",
