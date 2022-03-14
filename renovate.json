@@ -32,5 +32,10 @@
             "datasourceTemplate": "github-releases",
             "versioningTemplate": "semver"
         }
-    ]
+    ],
+    "argocd": {
+        "fileMatch": [
+            "^samples/argo-cd/.*\\.ya?ml$"
+        ]
+    }
 }
