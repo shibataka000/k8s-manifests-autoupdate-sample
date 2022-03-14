@@ -12,6 +12,14 @@
         "kustomize",
         "regex"
     ],
+    "packageRules": [
+        {
+            "matchPackageNames": [
+                "kubernetes/autoscaler"
+            ],
+            "versioning": "regex:^cluster-autoscaler-(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)?$"
+        }
+    ],
     "regexManagers": [
         {
             "fileMatch": [
@@ -20,17 +28,6 @@
             "matchStrings": [
                 "https://raw\\.githubusercontent\\.com/(?<depName>[^/]+/[^/]+)/(?<currentValue>[^/]+)/.*\\s+#\\s*renovate:enabled"
             ],
-            "datasourceTemplate": "github-releases",
-            "versioningTemplate": "semver"
-        },
-        {
-            "fileMatch": [
-                "(^|/)kustomization\\.ya?ml$"
-            ],
-            "matchStrings": [
-                "https://raw\\.githubusercontent\\.com/kubernetes/autoscaler/(?<currentValue>[^/]+)/.*\\s+#\\s*renovate:cluster-autoscaler:enabled"
-            ],
-            "depNameTemplate": "kubernetes/autoscaler",
             "datasourceTemplate": "github-releases",
             "versioningTemplate": "semver"
         }
